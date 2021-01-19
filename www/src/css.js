@@ -2,7 +2,7 @@ import Styled, { createGlobalStyle } from "styled-components/macro";
 
 export const FONT_REGULAR = "AvenirNext-Regular, sans-serif";
 export const FONT_BOLD = "AvenirNext-Bold, sans-serif";
-export const V_GUTTER = 20;
+export const V_GUTTER = 40;
 export const H_GUTTER = 40;
 
 export default createGlobalStyle`
@@ -62,6 +62,12 @@ export default createGlobalStyle`
     font-family: 'Arapey', serif;
     letter-spacing: 1px;
     margin-top: 15px;
+  }
+
+  a {
+      text-decoration: none;
+      color: var(--color-text-1);
+      cursor: pointer;
   }
 `;
 

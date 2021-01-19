@@ -14,9 +14,9 @@ const Video = () => {
         width="100%"
         height="100%"
         src="https://www.youtube.com/embed/o0WUKmGlSRE?autoplay=1&modestbranding=1"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
         modestbranding="1"
       ></iframe>
     );

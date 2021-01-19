@@ -30,7 +30,7 @@ const IconTimeBW =
 
 const Footer = () => {
   return (
-    <FooterOuterContainer>
+    <FooterOuterContainer id="contact">
       <FooterInnerContainer>
         <Map width="600" height="300"></Map>
         <ContactContainer>

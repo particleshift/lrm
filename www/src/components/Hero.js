@@ -1,25 +1,26 @@
 import React from "react";
 import { OuterContainer, InnerContainer } from "../css.js";
 import Styled from "styled-components";
+import HeroBg from "../assets/hero-bg.jpg";
 
 const Header = () => {
-  const height = window.innerHeight - 100;
-  console.log("Header -> height", height);
+  const height = window.innerHeight - 60;
 
   return (
-    <HeroOuterContainer
-      height={height}
-      bg="https://static.wixstatic.com/media/01fdd6_07d19a205d6e48c5bc07b667467812be~mv2_d_4032_3024_s_4_2.jpg/v1/fill/w_2062,h_1546,al_c,q_90,usm_0.66_1.00_0.01/01fdd6_07d19a205d6e48c5bc07b667467812be~mv2_d_4032_3024_s_4_2.jpg"
-    >
+    <HeroOuterContainer height={height} bg={HeroBg}>
       <Shadow />
       <HeroInnerContainer>
-        <BigText>A Warm Safe Place</BigText>
+        <BigText>A Warm Safe Space</BigText>
         <SubText>
           for creating healthy relationships and acquiring skills to break free
           from poverty and victimization
         </SubText>
 
-        <Button>Donate</Button>
+        <ButtonWrapper>
+          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=U4NC5KB43LMFJ">
+            <Button>Donate</Button>
+          </a>
+        </ButtonWrapper>
         <TinyText>
           <b>100%</b> of your tax deductible donation goes towards meeting the
           daily and monthly operational and programming costs.
@@ -31,6 +32,7 @@ const Header = () => {
 };
 
 const HeroOuterContainer = Styled(OuterContainer)`
+  margin-top: 60px;
   height: ${(props) => props.height}px;
   background-image: url(${(props) => props.bg});
   background-size: cover;
@@ -78,14 +80,26 @@ const TinyText = Styled.p`
   font-size: 13px;
 `;
 
+const ButtonWrapper = Styled.div`
+    margin: 60px 0 30px 0;
+`;
+
 const Button = Styled.button`
   appearance: none;
+  cursor: pointer;
   background-color: var(--color-pink);
   color: #FFFFFF;
   
   font-size: 30px;
-  margin: 60px 0 30px 0;
   padding: 15px 50px;
+  
+  border: 5px solid var(--color-pink);
+  transition: border-color .25s;
+
+  :hover {
+    border-color: white;    
+  }
+
 `;
 
 export default Header;

@@ -7,23 +7,27 @@ const About = () => {
     <StoryOuterContainer>
       <SectionHeader>Our Story</SectionHeader>
       <p>
-        Cedar Rapids has a large population of ‘invisible’ women. These women
-        face unemployment, unhealthy relationships, and homelessness. All of
-        which, make them the most vulnerable to becoming physically, emotionally
-        and sexually victimized.
+        Founded in ____ by Pam Skelton, Living Room is a daytime safe space for
+        women, offering a secure, homelike setting for conversation and personal
+        connection.
       </p>
       <p>
-        After multiple personal interactions with these women coming from
-        various backgrounds and ages it became our desire to provide a safe,
-        supportive, and Christ filled place for women to gather, to build
-        healthy relationships, discover and build upon their strengths/talents,
-        and realize their value through a relationship with Christ.
+        Our mission is to help women build healthy relationships, and get the
+        tools, resources, and support they need to move forward with their
+        lives.
       </p>
+      <p>We welcome all women in need, including those experiencing:</p>
       <p>
-        In February 2017 we secured a rental agreement on a 200 year old cottage
-        and began to refurbished it. On August 4, 2017 we held our official open
-        house and opened the doors to welcome the women .
+        Addiction <br />
+        Domestic abuse and violence <br />
+        Homelesness <br />
+        Mental health issues <br />
+        Sex trafficking <br />
+        Sexual assault <br />
+        Social isolation <br />
+        Trauma <br />
       </p>
+      <p>Drop in for crafts and games or study groups.</p>
     </StoryOuterContainer>
   );
 };

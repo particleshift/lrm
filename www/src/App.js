@@ -8,9 +8,10 @@ import Video from "./components/Video.js";
 import About from "./components/About.js";
 import Story from "./components/Story.js";
 import Footer from "./components/Footer.js";
-
-import LeatherTexture from "./assets/darkleather2.png";
 import { OuterContainer, InnerContainer, V_GUTTER, H_GUTTER } from "./css.js";
+
+const LeatherTexture =
+  "https://living-room-ministries.s3-us-west-1.amazonaws.com/assets/leather.png";
 
 function App() {
   return (
@@ -18,13 +19,12 @@ function App() {
       <GlobalCSS />
       <Header></Header>
       <Hero></Hero>
-      {/* <Quotes></Quotes> */}
-      <Row>
+
+      <Row id="about">
         <Column width="55%">
           <Video></Video>
         </Column>
         <Column width="45%">
-          {/* <Quotes></Quotes> */}
           <Story></Story>
         </Column>
       </Row>

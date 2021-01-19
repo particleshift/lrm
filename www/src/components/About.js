@@ -6,14 +6,16 @@ import {
   V_GUTTER,
 } from "../css.js";
 import Styled from "styled-components";
+import AboutBg from "../assets/about.webp";
+import ProcessStep1 from "../assets/process-step-1.webp";
 
 const About = () => {
   return (
     <AboutOuterContainer>
-      <Blur bg="https://static.wixstatic.com/media/31e2e9a7bf5b465887db7407f729ddb8.jpg/v1/fill/w_1984,h_1690,al_c,q_90,usm_0.66_1.00_0.01/31e2e9a7bf5b465887db7407f729ddb8.webp" />
+      <Blur bg={AboutBg} />
       <Gradient />
       <AboutInnerContainer>
-        <Row>
+        <Row style={{ marginTop: 0 }}>
           <Column large={true}>
             <SectionHeader>Our Process</SectionHeader>
           </Column>
@@ -24,7 +26,7 @@ const About = () => {
           <Column large={true}>
             <Row>
               <div>
-                <Avatar src="https://static.wixstatic.com/media/01fdd6_4c093f2e020447b49f2ff3c71d9d839d~mv2.jpg/v1/crop/x_85,y_0,w_1018,h_729/fill/w_592,h_420,al_c,q_80,usm_0.66_1.00_0.01/01fdd6_4c093f2e020447b49f2ff3c71d9d839d~mv2.webp" />
+                <Avatar src={ProcessStep1} />
               </div>
               <div>
                 <h4>Fellowship</h4>
@@ -42,7 +44,7 @@ const About = () => {
           <Column large={true}>
             <Row>
               <div>
-                <Avatar src="https://static.wixstatic.com/media/01fdd6_4c093f2e020447b49f2ff3c71d9d839d~mv2.jpg/v1/crop/x_85,y_0,w_1018,h_729/fill/w_592,h_420,al_c,q_80,usm_0.66_1.00_0.01/01fdd6_4c093f2e020447b49f2ff3c71d9d839d~mv2.webp" />
+                <Avatar src={ProcessStep1} />
               </div>
               <div>
                 <h4>DISCOVERY</h4>
@@ -62,7 +64,7 @@ const About = () => {
           <Column large={true}>
             <Row>
               <div>
-                <Avatar src="https://static.wixstatic.com/media/01fdd6_4c093f2e020447b49f2ff3c71d9d839d~mv2.jpg/v1/crop/x_85,y_0,w_1018,h_729/fill/w_592,h_420,al_c,q_80,usm_0.66_1.00_0.01/01fdd6_4c093f2e020447b49f2ff3c71d9d839d~mv2.webp" />
+                <Avatar src={ProcessStep1} />
               </div>
               <div>
                 <h4>RENEWAL</h4>
@@ -79,7 +81,7 @@ const About = () => {
           <Column large={true}>
             <Row>
               <div>
-                <Avatar src="https://static.wixstatic.com/media/01fdd6_4c093f2e020447b49f2ff3c71d9d839d~mv2.jpg/v1/crop/x_85,y_0,w_1018,h_729/fill/w_592,h_420,al_c,q_80,usm_0.66_1.00_0.01/01fdd6_4c093f2e020447b49f2ff3c71d9d839d~mv2.webp" />
+                <Avatar src={ProcessStep1} />
               </div>
               <div>
                 <h4>GROWTH</h4>
@@ -99,7 +101,7 @@ const About = () => {
           <Column large={true}>
             <Row>
               <div>
-                <Avatar src="https://static.wixstatic.com/media/01fdd6_4c093f2e020447b49f2ff3c71d9d839d~mv2.jpg/v1/crop/x_85,y_0,w_1018,h_729/fill/w_592,h_420,al_c,q_80,usm_0.66_1.00_0.01/01fdd6_4c093f2e020447b49f2ff3c71d9d839d~mv2.webp" />
+                <Avatar src={ProcessStep1} />
               </div>
               <div>
                 <h4>FULL CIRCLE</h4>
@@ -162,7 +164,7 @@ const AboutInnerContainer = Styled(InnerContainer)`
 const Row = Styled.div`
   display: flex;
   flex-direction: row;
-  margin-top: ${V_GUTTER}px;
+  margin-top: ${20}px;
   width: 100%;
 `;
 
@@ -174,9 +176,9 @@ const Column = Styled.div`
 
 const Avatar = Styled.img`
   border-radius: 100%;
-  height: 90px;
+  height: 150px;
   margin-right: 15px;
-  width: 90px;
+  width: 150px;
 `;
 
 export default About;
